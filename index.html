@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Velvet Bloom</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg1: #c5bcdb;
+      --bg2: #98ccc6;
+      --primary: #3d3a4b;
+      --accent: #230d55;
+      --peach: #e7ceca;
+      --teal: #217d9c;
+      --shadow: rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, var(--bg1), var(--bg2));
+      color: var(--primary);
+    }
+
+    header {
+      background: linear-gradient(135deg, #d6bbdf, #c3e9e4);
+      padding: 80px 20px;
+      text-align: center;
+      border-bottom: 2px solid #200625;
+      background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.8rem;
+      color: var(--accent);
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .cta-button {
+      background: var(--teal);
+      color: rgb(209, 208, 208);
+      padding: 12px 28px;
+      border-radius: 30px;
+      border: none;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background: #355d66;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px 30px;
+    }
+
+    .hero h2 {
+      font-size: 2.4rem;
+      color: var(--teal);
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto;
+      color: #201f1f;
+      font-size: 1.05rem;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: rgba(229, 215, 238, 0.9);
+      border: 2px solid #2f2742;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 16px var(--shadow);
+      backdrop-filter: blur(6px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-bottom: 1px solid #eee2e2;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      font-size: 1.3rem;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+      color: #4d4d4d;
+    }
+
+    .price {
+      font-weight: bold;
+      color: var(--teal);
+      font-size: 1.05rem;
+    }
+
+    footer {
+      background: #d3e4e0;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 50px;
+    }
+
+    footer p {
+      color: #4c4c4c;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Velvet Bloom</h1>
+  <p>Where Elegance Meets Expression – Explore the Essence of Beauty</p>
+  <button class="cta-button">Shop Now</button>
+</header>
+
+<section class="hero">
+  <h2>Premium Makeup Selection</h2>
+  <p>Discover our curated collection of luxury makeup essentials designed to elevate your style. From velvet lipsticks to radiant highlighters, we have it all.</p>
+</section>
+
+<section class="products">
+  <div class="card">
+    <img src="lipstick.jpeg" alt="Lipstick">
+    <div class="card-content">
+      <h3>Crimson Bloom Lipstick</h3>
+      <p>Bold, long-lasting lipstick with a velvet matte finish.</p>
+      <p class="price">$24.99</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="eyeshodow.jpeg" alt="Eyeshadow">
+    <div class="card-content">
+      <h3>Mystic Eyes Palette</h3>
+      <p>12 deep-pigment shades from dusk lavender to gold shimmer.</p>
+      <p class="price">$39.99</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="foundation.jpeg" alt="Foundation">
+    <div class="card-content">
+      <h3>Silk Touch Foundation</h3>
+      <p>Breathable and hydrating, offers flawless coverage for all skin types.</p>
+      <p class="price">$29.99</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="blush.jpeg" alt="Blush">
+    <div class="card-content">
+      <h3>Rosé Radiance Blush</h3>
+      <p>Soft peach and rose tones for a glowing complexion.</p>
+      <p class="price">$19.99</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="maskara.jpeg" alt="Mascara">
+    <div class="card-content">
+      <h3>Luxe Lash Mascara</h3>
+      <p>Volumizing formula that lifts and curls with precision.</p>
+      <p class="price">$21.99</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="highlighter.jpeg" alt="Highlighter">
+    <div class="card-content">
+      <h3>Golden Halo Highlighter</h3>
+      <p>Soft-focus shimmer with golden undertones for all skin tones.</p>
+      <p class="price">$22.99</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="compact.jpeg" alt="Compact Powder">
+    <div class="card-content">
+      <h3>Velvet Matte Compact</h3>
+      <p>Mattifies and sets makeup with a silky-smooth texture.</p>
+      <p class="price">$18.50</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="kit.jpeg" alt="Brush Set">
+    <div class="card-content">
+      <h3>Artisan Brush Kit</h3>
+      <p>10-piece premium brush set for flawless application.</p>
+      <p class="price">$49.99</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="gloss.webp" alt="Lip Gloss">
+    <div class="card-content">
+      <h3>Mirror Shine Gloss</h3>
+      <p>Non-sticky formula with high-reflection gloss.</p>
+      <p class="price">$16.99</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="mist.jpeg" alt="Setting Spray">
+    <div class="card-content">
+      <h3>Dew Lock Setting Mist</h3>
+      <p>Hydrating spray that locks in makeup with a dewy finish.</p>
+      <p class="price">$25.00</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Contact us at <a href="mailto:support@velvetbloom.com">support@velvetbloom.com</a> | &copy; 2025 Velvet Bloom</p>
+</footer>
+
+</body>
+</html>
